@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Hand To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body background="https://th.bing.com/th/id/OIP.Vo_25HkYv3MEen7_v_B73gHaDe?pid=Api&rs=1">
+  <div class="container">
+  
+    <center>
+<h3 class="btn btn-info heading">HAND GESTURE TO EMOJI APP
+<br><span>&#128077;</span>
+<span>&#129304;</span>
+<span>&#9996;</span>
+<span>&#128076;</span>
+<span>&#128078;</span>
+<span>&#129310;</span>
+</h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color:blueviolet">Is it Victory?</b>
+        <br>
+        <b style="color: black">Ist it Best?</b>
+        <br>
+        <b style="color: red">Is it Crossed fingers?</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View - </label>
+<div id="camera"></div>
+<br><br>
+<button onclick="takePhoto()"class="btn btn-danger">CAPTURE IMAGE</button>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1 - </label>
+        <p class="emotion"id="emotion_name"></p>
+        <p class="emoji"id="emoji"></p>
+        <label>Prediction 2 - </label>
+        <p class="emotion"id="emotion_name2"></p>
+        <p class="emoji"id="emoji2"></p>
+    </div>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+<div id="result"></div>
+<br><br>
+<button onclick="check()"class="btn btn-danger">CHECK GESTURE</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
